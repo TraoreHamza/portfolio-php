@@ -23,7 +23,7 @@ switch ($_SERVER['REQUEST_URI']) {
       echo "Page de projects";
       break;
    case '/contact':
-      include './template/contact.php';
+      include './templates/contact.php';
       break;
    
    default:
