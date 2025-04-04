@@ -23,8 +23,8 @@ switch ($cleanPath) {
    case '/skills':
       include './templates/skills.php';
       break;
-   case '/projects':
-      echo "Page de projects";
+   case '/project':
+      echo './templates/project.php';
       break;
    case '/contact':
       include './templates/contact.php';
