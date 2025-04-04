@@ -1,3 +1,6 @@
+<?php
+ $currentPage = $_SERVER['REQUEST_URI']
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,7 +22,7 @@
     </style>
 </head>
 <body>
-<header class="bg-indigo-700 text-white">
+<header class="bg-white text-slate-700">
          <nav class="p-2 flex justify-between items-center border-b border-slate-200 sticky top-0">
              <!-- Logo -->
              <a href="/">
@@ -34,17 +37,17 @@
              </button>
  
              <!-- Menu navigation -->
-             <ul class="hidden md:flex gap-4" id="menu">
-                 <li class="p-2 hover:bg-slate-100 rounded-lg hover:text-amber-600">
+             <ul class="bg-slate-100 p-1 hidden md:flex gap-4" id="menu">
+                 <li class="p-2 hover:text-slate-800 <?= $currentPage == '/about' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
                      <a href="/about">Présentation</a>
                  </li>
-                 <li class="p-2 hover:bg-slate-100 rounded-lg hover:text-amber-600">
+                 <li class="p-2 hover:text-slate-800 <?= $currentPage == '/skills' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
                      <a href="/skills">Mes compétences</a>
                  </li>
-                 <li class="p-2 hover:bg-slate-100 rounded-lg hover:text-amber-600">
+                 <li class="p-2 hover:text-slate-800 <?= $currentPage == '/projects' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
                      <a href="/projects">Mes projets</a>
                  </li>
-                 <li class="p-2 hover:bg-slate-100 rounded-lg hover:text-amber-600">
+                 <li class="p-2 hover:text-slate-800 <?= $currentPage == '/contact' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
                      <a href="/contact">Contact</a>
                  </li>
              </ul>
@@ -53,10 +56,10 @@
          <!-- Menu mobile -->
          <nav id="mobile-menu" class="hidden md:hidden fixed top-18 right-0 w-1/2 h-screen border-l border-slate-200 bg-white text-slate-700">
              <ul class="flex flex-col p-4">
-                 <li class="p-2 hover:bg-slate-100 hover:text-amber-600"><a href="/about" class="">Présentation</a></li>
-                 <li class="p-2 hover:bg-slate-100 hover:text-amber-600"><a href="/skills" class="">Mes compétences</a></li>
-                 <li class="p-2 hover:bg-slate-100 hover:text-amber-600"><a href="/projects" class="">Mes projets</a></li>
-                 <li class="p-2 hover:bg-slate-100 hover:text-amber-600"><a href="/contact" class="">Contact</a></li>
+                 <li class="p-2 hover:bg-slate-100 hover:text-neutral-900"><a href="/about" class="">Présentation</a></li>
+                 <li class="p-2 hover:bg-slate-100 hover:text-neutral-900"><a href="/skills" class="">Mes compétences</a></li>
+                 <li class="p-2 hover:bg-slate-100 hover:text-neutral-900"><a href="/projects" class="">Mes projets</a></li>
+                 <li class="p-2 hover:bg-slate-100 hover:text-neutral-900"><a href="/contact" class="">Contact</a></li>
              </ul>
          </nav>
      </header>
