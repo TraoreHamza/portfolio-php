@@ -9,7 +9,11 @@
 //     header("Location : https://google.fr");
 //  };
 
-switch ($_SERVER['REQUEST_URI']) {
+$path = $_SERVER['REQUEST_URI'];
+
+$cleanPath = preg_replace('/\?.*/', '', $path);
+
+switch ($cleanPath) {
    case '/':
       echo "Page d'accueil";
       break;
@@ -17,7 +21,7 @@ switch ($_SERVER['REQUEST_URI']) {
       echo "Page de presentation";
       break;
    case '/skills':
-      echo "Page de compétences";
+      include './templates/skills.php';
       break;
    case '/projects':
       echo "Page de projects";
