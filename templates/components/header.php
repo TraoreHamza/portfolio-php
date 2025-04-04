@@ -57,8 +57,8 @@ $currentPage = $_SERVER['REQUEST_URI']
                 <li class="p-2 hover:text-slate-800 <?= $currentPage == '/skills' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
                     <a href="/skills">Mes compétences</a>
                 </li>
-                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/projects' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
-                    <a href="/projects">Mes projets</a>
+                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/project' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
+                    <a href="/project">Mes projets</a>
                 </li>
                 <li class="p-2 hover:text-slate-800 <?= $currentPage == '/contact' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
                     <a href="/contact">Contact</a>
