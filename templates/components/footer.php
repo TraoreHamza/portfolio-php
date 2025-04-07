@@ -1,6 +1,6 @@
-<footer class="bg-indigo-700 text-white fixed bottom-0 w-full">
+<footer class="bg-white p-2  border-t fixed bottom-0 w-full">
      <div class="p-3 text-center">
-         <p>© <?php echo date('Y'); ?> Ton prénom</p>
+         <p>© <?php echo date('Y'); ?> Hamza</p>
      </div>
  </footer>
 </body>

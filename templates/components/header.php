@@ -1,5 +1,6 @@
 <?php
-$currentPage = $_SERVER['REQUEST_URI']
+    // Récupération de la page courante
+    $currentPage = $_SERVER['REQUEST_URI']; // '/quelque-chose'
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,24 +15,6 @@ $currentPage = $_SERVER['REQUEST_URI']
     <link rel="stylesheet" href="./assets/style.css">
     <script src="./assets/main.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-
-            @apply {
-                bg-gradient-to-r from-slate-200 to-slate-50 text-slate-800
-            }
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-    </style>
 </head>
 
 <body>
@@ -50,17 +33,17 @@ $currentPage = $_SERVER['REQUEST_URI']
             </button>
 
             <!-- Menu navigation -->
-            <ul class="bg-slate-100 p-1 hidden md:flex gap-4" id="menu">
-                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/about' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
+            <ul class="bg-slate-100 p-1 rounded-lg hidden md:flex gap-4" id="menu">
+                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/about' ? 'bg-white text-slate-800 rounded-lg shadow-md' : '' ?>">
                     <a href="/about">Présentation</a>
                 </li>
-                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/skills' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
+                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/skills' ? 'bg-white text-slate-800 rounded-lg shadow-md' : '' ?>">
                     <a href="/skills">Mes compétences</a>
                 </li>
-                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/project' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
-                    <a href="/project">Mes projets</a>
+                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/projects' ? 'bg-white text-slate-800 rounded-lg shadow-md' : '' ?>">
+                    <a href="/projects">Mes projets</a>
                 </li>
-                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/contact' ? 'rounded-lg shadow-md text-slate-800 b bg-white' : '' ?>">
+                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/contact' ? 'bg-white text-slate-800 rounded-lg shadow-md' : '' ?>">
                     <a href="/contact">Contact</a>
                 </li>
             </ul>
@@ -69,10 +52,10 @@ $currentPage = $_SERVER['REQUEST_URI']
         <!-- Menu mobile -->
         <nav id="mobile-menu" class="hidden md:hidden fixed top-18 right-0 w-1/2 h-screen border-l border-slate-200 bg-white text-slate-700">
             <ul class="flex flex-col p-4">
-                <li class="p-2 hover:bg-slate-100 hover:text-neutral-900"><a href="/about" class="">Présentation</a></li>
-                <li class="p-2 hover:bg-slate-100 hover:text-neutral-900"><a href="/skills" class="">Mes compétences</a></li>
-                <li class="p-2 hover:bg-slate-100 hover:text-neutral-900"><a href="/projects" class="">Mes projets</a></li>
-                <li class="p-2 hover:bg-slate-100 hover:text-neutral-900"><a href="/contact" class="">Contact</a></li>
+                <li class="p-2 hover:bg-slate-100 hover:text-amber-600"><a href="/about" class="">Présentation</a></li>
+                <li class="p-2 hover:bg-slate-100 hover:text-amber-600"><a href="/skills" class="">Mes compétences</a></li>
+                <li class="p-2 hover:bg-slate-100 hover:text-amber-600"><a href="/projects" class="">Mes projets</a></li>
+                <li class="p-2 hover:bg-slate-100 hover:text-amber-600"><a href="/contact" class="">Contact</a></li>
             </ul>
         </nav>
     </header>
