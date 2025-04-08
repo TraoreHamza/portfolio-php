@@ -15,10 +15,10 @@ $cleanPath = preg_replace('/\?.*/', '', $path);
 
 switch ($cleanPath) {
    case '/':
-      echo "Page d'accueil";
+      include './templates/home.php';
       break;
    case '/about':
-      echo "Page de presentation";
+      include './templates/about.php';
       break;
    case '/skills':
       include './templates/skills.php';

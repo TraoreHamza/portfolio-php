@@ -6,7 +6,7 @@
  body { 
      font-family: 'Poppins', sans-serif;
      font-weight: 300;
-     @apply { text-slate-800 };
+     @apply { text-slate-800 p-0 m-0 };
  }
  
  /* Typography */
