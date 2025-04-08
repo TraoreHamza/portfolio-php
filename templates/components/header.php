@@ -17,8 +17,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header class="bg-white text-slate-700">
+<body class="bg-black">
+    <header class="text-slate-700">
         <nav class="p-2 flex justify-between items-center border-b border-slate-200 sticky top-0">
             <!-- Logo -->
             <a href="/">
@@ -40,8 +40,8 @@
                 <li class="p-2 hover:text-slate-800 <?= $currentPage == '/skills' ? 'bg-white text-slate-800 rounded-lg shadow-md' : '' ?>">
                     <a href="/skills">Mes compétences</a>
                 </li>
-                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/projects' ? 'bg-white text-slate-800 rounded-lg shadow-md' : '' ?>">
-                    <a href="/projects">Mes projets</a>
+                <li class="p-2 hover:text-slate-800 <?= $currentPage == '/project' ? 'bg-white text-slate-800 rounded-lg shadow-md' : '' ?>">
+                    <a href="/project">Mes projets</a>
                 </li>
                 <li class="p-2 hover:text-slate-800 <?= $currentPage == '/contact' ? 'bg-white text-slate-800 rounded-lg shadow-md' : '' ?>">
                     <a href="/contact">Contact</a>

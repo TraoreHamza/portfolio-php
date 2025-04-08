@@ -1,4 +1,4 @@
-<footer class="bg-white p-2 mt-10 border-t fixed bottom-0 w-full">
+<footer class=" mt-10 text-white w-full">
      <div class="p-3 text-center">
          <p>© <?php echo date('Y'); ?> Hamza</p>
      </div>

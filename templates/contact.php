@@ -17,6 +17,6 @@ $lastname = htmlspecialchars($_POST['lastname'] ?? '');
     Me contacter
 </h1>
 
-<div class="grid place-items-center">
+<div class="bg-white text-black grid place-items-center w-max m-auto">
     <?php include 'templates/components/form.php'; ?>
 </div>
