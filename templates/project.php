@@ -18,7 +18,7 @@ function toSlug(string $stackIcon): string
 }
 ?>
 
-<h1 class="bg-clip-text bg-gradient-to-br from-slate-800 to-slate-400 text-6xl font-bold text-transparent text-center">
+<h1 class="text-center text-5xl mt-10 mb-10">
     Mes projets
 </h1>
 
