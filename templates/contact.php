@@ -17,8 +17,6 @@ $message = htmlspecialchars($_POST['message'] ?? '');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     var_dump($_POST);
-    // TODO : Envoyer l'email avec MailTrap
-
 }
 ?>
 
