@@ -1,15 +1,5 @@
 <div class="m-4 shadow-sm">
     <form action="" method="post" class="flex flex-col gap-3">
-        <!-- Objets -->
-        <div class="border-2 border-slate-950 rounded-lg px-4 py-2 focus:border-slate-400 focus:shadow-md focus:outline-none">
-            <select name="object" id="object" class="bg-transparent text-slate-800 w-full border-none">
-                <option value="">-- À quel sujet me contactez-vous ? --</option>
-                <option value="Collaboration">Collaboration</option>
-                <option value="Formation">Formation</option>
-                <option value="Devis gratuit">Devis gratuit</option>
-                <option value="Autre">Autre...</option>
-            </select>
-        </div>
         <!-- Identité -->
         <fieldset class="border-2 border-slate-950 rounded-lg px-4 py-2">
             <legend class="flex gap-2 items-center">
@@ -56,6 +46,16 @@
                 </div>
             </div>
         </fieldset>
+        <!-- Objets -->
+        <div class="border-2 border-slate-950 rounded-lg px-4 py-2 focus:border-slate-400 focus:shadow-md focus:outline-none">
+            <select name="object" id="object" class="bg-transparent text-slate-800 w-full border-none">
+                <option value="">-- À quel sujet me contactez-vous ? --</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Formation">Formation</option>
+                <option value="Devis gratuit">Devis gratuit</option>
+                <option value="Autre">Autre...</option>
+            </select>
+        </div>
         <!-- Message -->
         <div class="">
             <textarea name="message" id="message" rows="10" class="resize-none w-full border-2
