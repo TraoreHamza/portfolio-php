@@ -12,13 +12,13 @@
                 <div class="flex flex-col gap-2">
                     <label for="firstname" class="font-semibold text-lg">Votre prénom</label>
                     <input type="text" name="firstname" id="firstname" placeholder="Martin" 
-                    minlength="2" maxlength="80" class="border border-slate-950 rounded-lg 
+                    minlength="2" maxlength="80" class="border-2 border-slate-950 bg-amber-50 rounded-lg 
                     px-4 py-2 focus:border-slate-400 focus:shadow-md focus:outline-none" required>
                 </div>
                 <div class="flex flex-col gap-2">
                     <label for="lastname" class="font-semibold text-lg">Votre nom</label>
                     <input type="text" name="lastname" id="lastname" placeholder="Dupont" 
-                    minlength="2" maxlength="80" class="border border-slate-950 rounded-lg
+                    minlength="2" maxlength="80" class="border-2 border-slate-950 bg-amber-50 rounded-lg
                      px-4 py-2 focus:border-slate-400 focus:shadow-md focus:outline-none" required>
                 </div>
             </div>
@@ -35,13 +35,13 @@
                 <div class="flex flex-col gap-2">
                     <label for="email" class="font-semibold text-lg">Adresse email</label>
                     <input type="email" name="email" id="firstname" placeholder="martin@gmail.com"
-                    maxlength="80" class="border border-slate-950 rounded-lg px-4 py-2 focus:border-slate-400
+                    maxlength="80" class="border-2 border-slate-950 bg-amber-50 rounded-lg px-4 py-2 focus:border-slate-400
                     focus:shadow-md focus:outline-none" required>
                 </div>
                 <div class="flex flex-col gap-2">
                     <label for="telephone" class="font-semibold text-lg">Téléphone</label>
                     <input type="tel" name="telephone" id="lastname" placeholder="0612445678"
-                    minlength="10" maxlength="12" class="border border-slate-950 rounded-lg 
+                    minlength="10" maxlength="12" class="border-2 border-slate-950 bg-amber-50 rounded-lg 
                     px-4 py-2 focus:border-slate-400 focus:shadow-md focus:outline-none" required>
                 </div>
             </div>
