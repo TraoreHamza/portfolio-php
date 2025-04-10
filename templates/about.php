@@ -22,7 +22,7 @@
                 </div>
                 <div class="flex items-center gap-20 m-auto mb-10">
                     <figure>
-                        <img src="/image/hamza.PNG" alt="" class="w-40">
+                        <img src="/image/ziito.PNG" alt="" class="w-40">
                     </figure>
                 <div>
                     <p> Avant toute chose, je me présente. J'ai 25 ans et je suis actuellement en formation
